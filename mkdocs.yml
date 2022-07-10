@@ -8,6 +8,8 @@ nav:
         - 'Summary': 'cases/summary.md'
         - 'Case Question Examples': 'cases/question_examples.md'
         - 'Verbs By Cases': 'cases/verb_cases.md'
+    - 'Verbs':
+        - 'Summary': 'verbs/verb_summary.md'
     - About:
         - 'License': 'license.md'
         - 'Release Notes': 'release-notes.md'
