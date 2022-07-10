@@ -6,4 +6,4 @@
 ## Interrogative
 
 ## Passive Voice
-2
+4
