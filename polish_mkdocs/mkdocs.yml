@@ -1,0 +1,15 @@
+site_name: Tom's Polish Site
+
+nav:
+    - Home: 'index.md'
+    - 'Basics':
+        - 'Phrases': 'basics/phrases.md'
+    - 'Cases':
+        - 'Summary': 'cases/summary.md'
+        - 'Case Question Examples': 'cases/question_examples.md'
+        - 'Verbs By Cases': 'cases/verb_cases.md'
+    - About:
+        - 'License': 'license.md'
+        - 'Release Notes': 'release-notes.md'
+
+theme: readthedocs
