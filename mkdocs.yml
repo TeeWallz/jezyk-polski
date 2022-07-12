@@ -1,9 +1,75 @@
-site_name: Tom's Polish Site
+# Project information
+site_name: "MkDocs Material Boilerplate"
+site_description: "MkDocs Material Boilerplate (Starter Kit) - Deploy documentation to hosting platforms (Netlify, GitHub Pages, GitLab Pages, and AWS Amplify Console) with Docker, pipenv, and GitHub Actions."
+site_author: "peaceiris"
+site_url: "https://mkdocs.peaceiris.com/"
 
+# Copyright
+copyright: "&copy; 2021 peaceiris"
+
+# Repository
+repo_name: "GitHub"
+# repo_url: "https://github.com/peaceiris/mkdocs-material-boilerplate"
+# edit_uri: "https://github.com/peaceiris/mkdocs-material-boilerplate/edit/main/docs"
+
+# Configuration
+docs_dir: "docs"
+theme:
+  name: "material"
+  language: "en"
+  shortcuts:
+    help: 191 # ?
+    next: 78 # n
+    previous: 80 # p
+    search: 83 # s
+  palette:
+    primary: "purple"
+    accent: "red"
+  features:
+    - tabs
+  #font:
+  #text: 'Ubuntu'
+  #code: 'Ubuntu Mono'
+  #icon:
+  #logo: 'images/logo.svg'
+  #favicon: 'assets/images/favicon.ico'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - mdx_math:
+      enable_dollar_delimiter: true
+  - toc:
+      permalink: true
+      separator: "_"
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
+
+# Customization
+extra_javascript:
+  - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"
+extra_css:
+  - "assets/css/custom.css"
+extra:
+  manifest: "manifest.json"
+  social:
+    - icon: "fontawesome/brands/github-alt"
+      link: "https://github.com/peaceiris"
+    - icon: "fontawesome/brands/twitter"
+      link: "https://twitter.com/piris314en"
+
+# Page tree
 nav:
     - Home: 'index.md'
     - 'Basics':
         - 'Phrases': 'basics/phrases.md'
+        - 'Swadesh List': 'basics/swadesh_list.md'
     - 'Cases':
         - 'Summary': 'cases/summary.md'
         - 'Case Question Examples': 'cases/question_examples.md'
@@ -13,5 +79,3 @@ nav:
     - About:
         - 'License': 'license.md'
         - 'Release Notes': 'release-notes.md'
-
-theme: readthedocs

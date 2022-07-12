@@ -1,9 +1,19 @@
 # Verb Summary
 
+https://en.wiktionary.org/wiki/Appendix:Polish_verb_conjugation
 
 ## Verb into Noun
 
-## Interrogative
+## Imperative
 
 ## Passive Voice
-4
+
+## Present participle
+
+## Impersonal past tense
+
+
+## Conditional
+
+
+## Active participial adjective
