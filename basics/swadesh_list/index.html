@@ -1,0 +1,1639 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="MkDocs Material Boilerplate (Starter Kit) - Deploy documentation to hosting platforms (Netlify, GitHub Pages, GitLab Pages, and AWS Amplify Console) with Docker, pipenv, and GitHub Actions.">
+      
+      
+        <meta name="author" content="peaceiris">
+      
+      
+        <link rel="canonical" href="https://mkdocs.peaceiris.com/basics/swadesh_list/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+    
+    
+      
+        <title>Swadesh List - MkDocs Material Boilerplate</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.120efc48.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ab47bd">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="purple" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#swadesh_list" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MkDocs Material Boilerplate" class="md-header__button md-logo" aria-label="MkDocs Material Boilerplate" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MkDocs Material Boilerplate
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Swadesh List
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MkDocs Material Boilerplate" class="md-nav__button md-logo" aria-label="MkDocs Material Boilerplate" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    MkDocs Material Boilerplate
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Basics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Basics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phrases/" class="md-nav__link">
+        Phrases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Swadesh List
+      </a>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Cases
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Cases" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Cases
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cases/summary/" class="md-nav__link">
+        Summary
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cases/question_examples/" class="md-nav__link">
+        Case Question Examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cases/verb_cases/" class="md-nav__link">
+        Verbs By Cases
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Verbs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Verbs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Verbs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verbs/verb_summary/" class="md-nav__link">
+        Summary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license.md" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release-notes.md" class="md-nav__link">
+        Release Notes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="swadesh_list">Swadesh List<a class="headerlink" href="#swadesh_list" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>No</th>
+<th>En</th>
+<th>Pl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>I (1sg)</td>
+<td>ja</td>
+</tr>
+<tr>
+<td>2</td>
+<td>you (2sg)</td>
+<td>ty, pan, pani</td>
+</tr>
+<tr>
+<td>3</td>
+<td>he, she, it (3sg)</td>
+<td>on, ona, ono</td>
+</tr>
+<tr>
+<td>4</td>
+<td>we (1pl)</td>
+<td>my</td>
+</tr>
+<tr>
+<td>5</td>
+<td>you (2pl)</td>
+<td>wy, panowie, panie, państwo</td>
+</tr>
+<tr>
+<td>6</td>
+<td>they (3pl)</td>
+<td>oni, one</td>
+</tr>
+<tr>
+<td>7</td>
+<td>this</td>
+<td>ten, ta, to</td>
+</tr>
+<tr>
+<td>8</td>
+<td>that</td>
+<td>tamten, tamta, tamto</td>
+</tr>
+<tr>
+<td>9</td>
+<td>here</td>
+<td>tu, tutaj</td>
+</tr>
+<tr>
+<td>10</td>
+<td>there</td>
+<td>tam</td>
+</tr>
+<tr>
+<td>11</td>
+<td>who</td>
+<td>kto</td>
+</tr>
+<tr>
+<td>12</td>
+<td>what</td>
+<td>co</td>
+</tr>
+<tr>
+<td>13</td>
+<td>where</td>
+<td>gdzie</td>
+</tr>
+<tr>
+<td>14</td>
+<td>when</td>
+<td>kiedy</td>
+</tr>
+<tr>
+<td>15</td>
+<td>how</td>
+<td>jak</td>
+</tr>
+<tr>
+<td>16</td>
+<td>not</td>
+<td>nie</td>
+</tr>
+<tr>
+<td>17</td>
+<td>all</td>
+<td>wszystko</td>
+</tr>
+<tr>
+<td>18</td>
+<td>many</td>
+<td>dużo, wiele</td>
+</tr>
+<tr>
+<td>19</td>
+<td>some</td>
+<td>kilka, nieco, trochę</td>
+</tr>
+<tr>
+<td>20</td>
+<td>few</td>
+<td>mało, niedużo, niewiele</td>
+</tr>
+<tr>
+<td>21</td>
+<td>other</td>
+<td>drugi, inny</td>
+</tr>
+<tr>
+<td>22</td>
+<td>one</td>
+<td>jeden</td>
+</tr>
+<tr>
+<td>23</td>
+<td>two</td>
+<td>dwa</td>
+</tr>
+<tr>
+<td>24</td>
+<td>three</td>
+<td>trzy</td>
+</tr>
+<tr>
+<td>25</td>
+<td>four</td>
+<td>cztery</td>
+</tr>
+<tr>
+<td>26</td>
+<td>five</td>
+<td>pięć</td>
+</tr>
+<tr>
+<td>27</td>
+<td>big</td>
+<td>duży, wielki</td>
+</tr>
+<tr>
+<td>28</td>
+<td>long</td>
+<td>długi</td>
+</tr>
+<tr>
+<td>29</td>
+<td>wide</td>
+<td>szeroki</td>
+</tr>
+<tr>
+<td>30</td>
+<td>thick</td>
+<td>gruby</td>
+</tr>
+<tr>
+<td>31</td>
+<td>heavy</td>
+<td>ciężki</td>
+</tr>
+<tr>
+<td>32</td>
+<td>small</td>
+<td>mały</td>
+</tr>
+<tr>
+<td>33</td>
+<td>short</td>
+<td>krótki</td>
+</tr>
+<tr>
+<td>34</td>
+<td>narrow</td>
+<td>wąski</td>
+</tr>
+<tr>
+<td>35</td>
+<td>thin</td>
+<td>cienki</td>
+</tr>
+<tr>
+<td>36</td>
+<td>woman</td>
+<td>kobieta</td>
+</tr>
+<tr>
+<td>37</td>
+<td>man (adult male)</td>
+<td>mężczyzna</td>
+</tr>
+<tr>
+<td>38</td>
+<td>man (human being)</td>
+<td>człowiek</td>
+</tr>
+<tr>
+<td>39</td>
+<td>child</td>
+<td>dziecko, dziecię</td>
+</tr>
+<tr>
+<td>40</td>
+<td>wife</td>
+<td>żona</td>
+</tr>
+<tr>
+<td>41</td>
+<td>husband</td>
+<td>mąż</td>
+</tr>
+<tr>
+<td>42</td>
+<td>mother</td>
+<td>matka</td>
+</tr>
+<tr>
+<td>43</td>
+<td>father</td>
+<td>ojciec</td>
+</tr>
+<tr>
+<td>44</td>
+<td>animal</td>
+<td>zwierzę</td>
+</tr>
+<tr>
+<td>45</td>
+<td>fish</td>
+<td>ryba</td>
+</tr>
+<tr>
+<td>46</td>
+<td>bird</td>
+<td>ptak</td>
+</tr>
+<tr>
+<td>47</td>
+<td>dog</td>
+<td>pies</td>
+</tr>
+<tr>
+<td>48</td>
+<td>louse</td>
+<td>wesz</td>
+</tr>
+<tr>
+<td>49</td>
+<td>snake</td>
+<td>wąż</td>
+</tr>
+<tr>
+<td>50</td>
+<td>worm</td>
+<td>robak, czerw</td>
+</tr>
+<tr>
+<td>51</td>
+<td>tree</td>
+<td>drzewo</td>
+</tr>
+<tr>
+<td>52</td>
+<td>forest</td>
+<td>las</td>
+</tr>
+<tr>
+<td>53</td>
+<td>stick</td>
+<td>kij, laska, patyk</td>
+</tr>
+<tr>
+<td>54</td>
+<td>fruit</td>
+<td>owoc</td>
+</tr>
+<tr>
+<td>55</td>
+<td>seed</td>
+<td>nasiono, siemię, ziarno</td>
+</tr>
+<tr>
+<td>56</td>
+<td>leaf</td>
+<td>liść</td>
+</tr>
+<tr>
+<td>57</td>
+<td>root</td>
+<td>korzeń</td>
+</tr>
+<tr>
+<td>58</td>
+<td>bark (of a tree)</td>
+<td>kora</td>
+</tr>
+<tr>
+<td>59</td>
+<td>flower</td>
+<td>kwiat</td>
+</tr>
+<tr>
+<td>60</td>
+<td>grass</td>
+<td>trawa</td>
+</tr>
+<tr>
+<td>61</td>
+<td>rope</td>
+<td>sznur, lina, powróz</td>
+</tr>
+<tr>
+<td>62</td>
+<td>skin</td>
+<td>skóra</td>
+</tr>
+<tr>
+<td>63</td>
+<td>meat</td>
+<td>mięso</td>
+</tr>
+<tr>
+<td>64</td>
+<td>blood</td>
+<td>krew</td>
+</tr>
+<tr>
+<td>65</td>
+<td>bone</td>
+<td>kość</td>
+</tr>
+<tr>
+<td>66</td>
+<td>fat (noun)</td>
+<td>tłuszcz, sadło</td>
+</tr>
+<tr>
+<td>67</td>
+<td>egg</td>
+<td>jajko, jajo</td>
+</tr>
+<tr>
+<td>68</td>
+<td>horn</td>
+<td>róg</td>
+</tr>
+<tr>
+<td>69</td>
+<td>tail</td>
+<td>ogon</td>
+</tr>
+<tr>
+<td>70</td>
+<td>feather</td>
+<td>pióro</td>
+</tr>
+<tr>
+<td>71</td>
+<td>hair</td>
+<td>włos</td>
+</tr>
+<tr>
+<td>72</td>
+<td>head</td>
+<td>głowa</td>
+</tr>
+<tr>
+<td>73</td>
+<td>ear</td>
+<td>ucho</td>
+</tr>
+<tr>
+<td>74</td>
+<td>eye</td>
+<td>oko</td>
+</tr>
+<tr>
+<td>75</td>
+<td>nose</td>
+<td>nos</td>
+</tr>
+<tr>
+<td>76</td>
+<td>mouth</td>
+<td>usta</td>
+</tr>
+<tr>
+<td>77</td>
+<td>tooth</td>
+<td>ząb</td>
+</tr>
+<tr>
+<td>78</td>
+<td>tongue (organ)</td>
+<td>język</td>
+</tr>
+<tr>
+<td>79</td>
+<td>fingernail</td>
+<td>paznokieć</td>
+</tr>
+<tr>
+<td>80</td>
+<td>foot</td>
+<td>stopa</td>
+</tr>
+<tr>
+<td>81</td>
+<td>leg</td>
+<td>noga</td>
+</tr>
+<tr>
+<td>82</td>
+<td>knee</td>
+<td>kolano</td>
+</tr>
+<tr>
+<td>83</td>
+<td>hand</td>
+<td>ręka</td>
+</tr>
+<tr>
+<td>84</td>
+<td>wing</td>
+<td>skrzydło</td>
+</tr>
+<tr>
+<td>85</td>
+<td>belly</td>
+<td>brzuch</td>
+</tr>
+<tr>
+<td>86</td>
+<td>guts</td>
+<td>trzewia, wnętrzności</td>
+</tr>
+<tr>
+<td>87</td>
+<td>neck</td>
+<td>szyja, kark</td>
+</tr>
+<tr>
+<td>88</td>
+<td>back</td>
+<td>plecy, grzbiet</td>
+</tr>
+<tr>
+<td>89</td>
+<td>breast</td>
+<td>pierś</td>
+</tr>
+<tr>
+<td>90</td>
+<td>heart</td>
+<td>serce</td>
+</tr>
+<tr>
+<td>91</td>
+<td>liver</td>
+<td>wątroba</td>
+</tr>
+<tr>
+<td>92</td>
+<td>to drink</td>
+<td>pić</td>
+</tr>
+<tr>
+<td>93</td>
+<td>to eat</td>
+<td>jeść</td>
+</tr>
+<tr>
+<td>94</td>
+<td>to bite</td>
+<td>gryźć, kąsać</td>
+</tr>
+<tr>
+<td>95</td>
+<td>to suck</td>
+<td>ssać</td>
+</tr>
+<tr>
+<td>96</td>
+<td>to spit</td>
+<td>pluć</td>
+</tr>
+<tr>
+<td>97</td>
+<td>to vomit</td>
+<td>wymiotować, zwracać</td>
+</tr>
+<tr>
+<td>98</td>
+<td>to blow</td>
+<td>dmuchać, dąć, wiać</td>
+</tr>
+<tr>
+<td>99</td>
+<td>to breathe</td>
+<td>dychać, oddychać</td>
+</tr>
+<tr>
+<td>100</td>
+<td>to laugh</td>
+<td>śmiać</td>
+</tr>
+<tr>
+<td>101</td>
+<td>to see</td>
+<td>widzieć</td>
+</tr>
+<tr>
+<td>102</td>
+<td>to hear</td>
+<td>słyszeć</td>
+</tr>
+<tr>
+<td>103</td>
+<td>to know</td>
+<td>wiedzieć, znać</td>
+</tr>
+<tr>
+<td>104</td>
+<td>to think</td>
+<td>myśleć</td>
+</tr>
+<tr>
+<td>105</td>
+<td>to smell</td>
+<td>czuć, niuchać, wąchać</td>
+</tr>
+<tr>
+<td>106</td>
+<td>to fear</td>
+<td>bać, lękać</td>
+</tr>
+<tr>
+<td>107</td>
+<td>to sleep</td>
+<td>spać</td>
+</tr>
+<tr>
+<td>108</td>
+<td>to live</td>
+<td>żyć</td>
+</tr>
+<tr>
+<td>109</td>
+<td>to die</td>
+<td>mrzeć, umierać, zdychać</td>
+</tr>
+<tr>
+<td>110</td>
+<td>to kill</td>
+<td>uśmiercać, zabijać</td>
+</tr>
+<tr>
+<td>111</td>
+<td>to fight</td>
+<td>walczyć</td>
+</tr>
+<tr>
+<td>112</td>
+<td>to hunt</td>
+<td>polować</td>
+</tr>
+<tr>
+<td>113</td>
+<td>to hit</td>
+<td>uderzać</td>
+</tr>
+<tr>
+<td>114</td>
+<td>to cut</td>
+<td>ciąć, kroić, rzezać</td>
+</tr>
+<tr>
+<td>115</td>
+<td>to split</td>
+<td>dzielić, rozdzielać, rozszczepiać</td>
+</tr>
+<tr>
+<td>116</td>
+<td>to stab</td>
+<td>dźgać, kłuć, bóść</td>
+</tr>
+<tr>
+<td>117</td>
+<td>to scratch</td>
+<td>drapać</td>
+</tr>
+<tr>
+<td>118</td>
+<td>to dig</td>
+<td>kopać, ryć</td>
+</tr>
+<tr>
+<td>119</td>
+<td>to swim</td>
+<td>pływać</td>
+</tr>
+<tr>
+<td>120</td>
+<td>to fly</td>
+<td>latać, lecieć</td>
+</tr>
+<tr>
+<td>121</td>
+<td>to walk</td>
+<td>iść, chodzić</td>
+</tr>
+<tr>
+<td>122</td>
+<td>to come</td>
+<td>przychodzić</td>
+</tr>
+<tr>
+<td>123</td>
+<td>to lie (as in a bed)</td>
+<td>leżeć</td>
+</tr>
+<tr>
+<td>124</td>
+<td>to sit</td>
+<td>siedzieć</td>
+</tr>
+<tr>
+<td>125</td>
+<td>to stand</td>
+<td>stać</td>
+</tr>
+<tr>
+<td>126</td>
+<td>to turn (intransitive)</td>
+<td>obracać</td>
+</tr>
+<tr>
+<td>127</td>
+<td>to fall</td>
+<td>padać, spadać, upadać</td>
+</tr>
+<tr>
+<td>128</td>
+<td>to give</td>
+<td>dawać</td>
+</tr>
+<tr>
+<td>129</td>
+<td>to hold</td>
+<td>trzymać, dzierżyć</td>
+</tr>
+<tr>
+<td>130</td>
+<td>to squeeze</td>
+<td>ściskać, wyżymać</td>
+</tr>
+<tr>
+<td>131</td>
+<td>to rub</td>
+<td>trzeć</td>
+</tr>
+<tr>
+<td>132</td>
+<td>to wash</td>
+<td>myć, prać</td>
+</tr>
+<tr>
+<td>133</td>
+<td>to wipe</td>
+<td>wycierać</td>
+</tr>
+<tr>
+<td>134</td>
+<td>to pull</td>
+<td>ciągnąć, pociągać</td>
+</tr>
+<tr>
+<td>135</td>
+<td>to push</td>
+<td>pchać, popychać</td>
+</tr>
+<tr>
+<td>136</td>
+<td>to throw</td>
+<td>rzucać</td>
+</tr>
+<tr>
+<td>137</td>
+<td>to tie</td>
+<td>wiązać</td>
+</tr>
+<tr>
+<td>138</td>
+<td>to sew</td>
+<td>szyć</td>
+</tr>
+<tr>
+<td>139</td>
+<td>to count</td>
+<td>liczyć, rachować</td>
+</tr>
+<tr>
+<td>140</td>
+<td>to say</td>
+<td>mówić, rzec</td>
+</tr>
+<tr>
+<td>141</td>
+<td>to sing</td>
+<td>śpiewać</td>
+</tr>
+<tr>
+<td>142</td>
+<td>to play</td>
+<td>grać</td>
+</tr>
+<tr>
+<td>143</td>
+<td>to float</td>
+<td>pływać</td>
+</tr>
+<tr>
+<td>144</td>
+<td>to flow</td>
+<td>płynąć, ciec</td>
+</tr>
+<tr>
+<td>145</td>
+<td>to freeze</td>
+<td>marznąć, zamarzać</td>
+</tr>
+<tr>
+<td>146</td>
+<td>to swell</td>
+<td>nabrzmiewać, obrzękać, pęcznieć, puchnąć</td>
+</tr>
+<tr>
+<td>147</td>
+<td>sun</td>
+<td>słońce</td>
+</tr>
+<tr>
+<td>148</td>
+<td>moon</td>
+<td>księżyc, miesiąc</td>
+</tr>
+<tr>
+<td>149</td>
+<td>star</td>
+<td>gwiazda</td>
+</tr>
+<tr>
+<td>150</td>
+<td>water</td>
+<td>woda</td>
+</tr>
+<tr>
+<td>151</td>
+<td>rain</td>
+<td>deszcz</td>
+</tr>
+<tr>
+<td>152</td>
+<td>river</td>
+<td>rzeka</td>
+</tr>
+<tr>
+<td>153</td>
+<td>lake</td>
+<td>jezioro</td>
+</tr>
+<tr>
+<td>154</td>
+<td>sea</td>
+<td>morze</td>
+</tr>
+<tr>
+<td>155</td>
+<td>salt</td>
+<td>sól</td>
+</tr>
+<tr>
+<td>156</td>
+<td>stone</td>
+<td>kamień</td>
+</tr>
+<tr>
+<td>157</td>
+<td>sand</td>
+<td>piasek</td>
+</tr>
+<tr>
+<td>158</td>
+<td>dust</td>
+<td>kurz, miał, pył</td>
+</tr>
+<tr>
+<td>159</td>
+<td>earth</td>
+<td>ziemia</td>
+</tr>
+<tr>
+<td>160</td>
+<td>cloud</td>
+<td>chmura, obłok</td>
+</tr>
+<tr>
+<td>161</td>
+<td>fog</td>
+<td>mgła</td>
+</tr>
+<tr>
+<td>162</td>
+<td>sky</td>
+<td>niebo</td>
+</tr>
+<tr>
+<td>163</td>
+<td>wind</td>
+<td>wiatr</td>
+</tr>
+<tr>
+<td>164</td>
+<td>snow</td>
+<td>śnieg</td>
+</tr>
+<tr>
+<td>165</td>
+<td>ice</td>
+<td>lód</td>
+</tr>
+<tr>
+<td>166</td>
+<td>smoke</td>
+<td>dym</td>
+</tr>
+<tr>
+<td>167</td>
+<td>fire</td>
+<td>ogień</td>
+</tr>
+<tr>
+<td>168</td>
+<td>ash</td>
+<td>popiół</td>
+</tr>
+<tr>
+<td>169</td>
+<td>to burn</td>
+<td>palić, gorzeć, płonąć</td>
+</tr>
+<tr>
+<td>170</td>
+<td>road</td>
+<td>droga</td>
+</tr>
+<tr>
+<td>171</td>
+<td>mountain</td>
+<td>góra</td>
+</tr>
+<tr>
+<td>172</td>
+<td>red</td>
+<td>czerwony</td>
+</tr>
+<tr>
+<td>173</td>
+<td>green</td>
+<td>zielony</td>
+</tr>
+<tr>
+<td>174</td>
+<td>yellow</td>
+<td>żółty</td>
+</tr>
+<tr>
+<td>175</td>
+<td>white</td>
+<td>biały</td>
+</tr>
+<tr>
+<td>176</td>
+<td>black</td>
+<td>czarny</td>
+</tr>
+<tr>
+<td>177</td>
+<td>night</td>
+<td>noc</td>
+</tr>
+<tr>
+<td>178</td>
+<td>day</td>
+<td>dzień</td>
+</tr>
+<tr>
+<td>179</td>
+<td>year</td>
+<td>rok</td>
+</tr>
+<tr>
+<td>180</td>
+<td>warm</td>
+<td>ciepły</td>
+</tr>
+<tr>
+<td>181</td>
+<td>cold</td>
+<td>zimny, chłodny</td>
+</tr>
+<tr>
+<td>182</td>
+<td>full</td>
+<td>pełny</td>
+</tr>
+<tr>
+<td>183</td>
+<td>new</td>
+<td>nowy</td>
+</tr>
+<tr>
+<td>184</td>
+<td>old</td>
+<td>stary</td>
+</tr>
+<tr>
+<td>185</td>
+<td>good</td>
+<td>dobry</td>
+</tr>
+<tr>
+<td>186</td>
+<td>bad</td>
+<td>zły</td>
+</tr>
+<tr>
+<td>187</td>
+<td>rotten</td>
+<td>zgniły</td>
+</tr>
+<tr>
+<td>188</td>
+<td>dirty</td>
+<td>brudny</td>
+</tr>
+<tr>
+<td>189</td>
+<td>straight</td>
+<td>prosty</td>
+</tr>
+<tr>
+<td>190</td>
+<td>round</td>
+<td>krągły, okrągły</td>
+</tr>
+<tr>
+<td>191</td>
+<td>sharp (as a knife)</td>
+<td>ostry</td>
+</tr>
+<tr>
+<td>192</td>
+<td>dull (as a knife)</td>
+<td>tępy</td>
+</tr>
+<tr>
+<td>193</td>
+<td>smooth</td>
+<td>gładki</td>
+</tr>
+<tr>
+<td>194</td>
+<td>wet</td>
+<td>mokry</td>
+</tr>
+<tr>
+<td>195</td>
+<td>dry</td>
+<td>suchy</td>
+</tr>
+<tr>
+<td>196</td>
+<td>correct</td>
+<td>poprawny, prawidłowy</td>
+</tr>
+<tr>
+<td>197</td>
+<td>near</td>
+<td>bliski</td>
+</tr>
+<tr>
+<td>198</td>
+<td>far</td>
+<td>daleki</td>
+</tr>
+<tr>
+<td>199</td>
+<td>right</td>
+<td>prawy</td>
+</tr>
+<tr>
+<td>200</td>
+<td>left</td>
+<td>lewy</td>
+</tr>
+<tr>
+<td>201</td>
+<td>at</td>
+<td>przy, u, na</td>
+</tr>
+<tr>
+<td>202</td>
+<td>in</td>
+<td>w, we</td>
+</tr>
+<tr>
+<td>203</td>
+<td>with</td>
+<td>z, ze</td>
+</tr>
+<tr>
+<td>204</td>
+<td>and</td>
+<td>i, oraz</td>
+</tr>
+<tr>
+<td>205</td>
+<td>if</td>
+<td>jeśli, jeżeli</td>
+</tr>
+<tr>
+<td>206</td>
+<td>because</td>
+<td>bo, gdyż, ponieważ</td>
+</tr>
+<tr>
+<td>207</td>
+<td>name</td>
+<td>imię, miano</td>
+</tr>
+</tbody>
+</table>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../phrases/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Phrases" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Phrases
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../cases/summary/" class="md-footer__link md-footer__link--next" aria-label="Next: Summary" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Summary
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2021 peaceiris
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/peaceiris" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/piris314en" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
