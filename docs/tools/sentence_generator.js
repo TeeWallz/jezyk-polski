@@ -70,6 +70,7 @@ function reveal_result(){
 
 window.addEventListener('load', function () {
     document.getElementsByClassName('md-overlay')[0].remove();
+    document.getElementsByClassName('md-sidebar--secondary')[0].remove();
     main()
     txt_english = document.getElementById('txt_english');
     txt_polish = document.getElementById('txt_polish');
