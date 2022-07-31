@@ -6,9 +6,15 @@ Guide: https://mkdocs.peaceiris.com/
 ## Install all packages
 
 ```sh
-pipenv sync --dev  # Installs all packages specified in Pipfile.lock.
+pipenv sync  # Installs all packages specified in Pipfile.lock.
 ```
 
+## Install new package
+```sh
+pipenv install PACKAGE
+pipenv lock
+pipenv lock -r > requirements.txt
+```
 
 
 ## Run MkDocs

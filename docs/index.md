@@ -1,19 +1,7 @@
-# Welcome to MkDocs
+Welcome to my Polish site!
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Some other cools links:
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-4
+* [www.learnpolishtoday.com/lessons/level/a-beginners-a1a2](https://www.learnpolishtoday.com/lessons/level/a-beginners-a1a2){:target="_blank"}
+* [en.wiktionary.org/wiki/Wiktionary:Main_Page](https://en.wiktionary.org/wiki/Wiktionary:Main_Page){:target="_blank"}
+* [courseofpolish.com/grammar](https://courseofpolish.com/grammar){:target="_blank"}

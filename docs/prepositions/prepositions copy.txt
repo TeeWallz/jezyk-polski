@@ -1,0 +1,98 @@
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th><p>declension</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>similar English preposition</p>
+<th>
+<p>genitive (dopełniacz, D.)</p></td>
+<td><p>dative (celownik, C.)</p></td>
+</tr>
+<tr class="even">
+<td><p>to, from, for</p></td>
+<td><p>do, od, dla</p>
+<th></td>
+</tr>
+<tr class="odd">
+<td><p>at (place)</p></td>
+<td><p>u</p>
+<th></td>
+</tr>
+<tr class="even">
+<td><p>during</p></td>
+<td><p>podczas</p>
+<th></td>
+</tr>
+<tr class="odd">
+<td><p>among, amid</p></td>
+<td><p>wśród, pośród</p>
+<th></td>
+</tr>
+<tr class="even">
+<td><p>next to, beside</p></td>
+<td><p>koło, obok</p></td>
+</tr>
+<tr class="odd">
+<td><p>near, close to</p></td>
+<td><p>blisko, nieopodal</p></td>
+</tr>
+<tr class="even">
+<td><p>opposite, across</p></td>
+<td><p>naprzeciw, naprzeciwko</p>
+<th></td>
+</tr>
+<tr class="odd">
+<td><p>without, except</p></td>
+<td><p>bez, oprócz</p>
+<th></td>
+</tr>
+<tr class="even">
+<td><p>with, from</p></td>
+<td><p>z, ze</p>
+<th></td>
+</tr>
+<tr class="odd">
+<td><p>towards</p></td>
+<td><th>
+<p>ku</p></td>
+</tr>
+<tr class="even">
+<td><p>thanks to</p></td>
+<td><th>
+<p>dzięki</p></td>
+</tr>
+<tr class="odd">
+<td><p>against</p></td>
+<td><th>
+<p>wbrew, przeciwko</p></td>
+</tr>
+<tr class="even">
+<td><p>by, through</p></td>
+<td><th></td>
+</tr>
+<tr class="odd">
+<td><p>at, about; on; after</p></td>
+<td><th></td>
+</tr>
+<tr class="even">
+<td><p>behind, under</p></td>
+<td><th></td>
+</tr>
+<tr class="odd">
+<td><p>in</p></td>
+<td><th></td>
+</tr>
+<tr class="even">
+<td><p>by, next to</p></td>
+<td><th></td>
+</tr>
+<tr class="odd">
+<td><p>through, among/between, on (spatial)</p></td>
+<td><th></td>
+</tr>
+</tbody>
+</table>

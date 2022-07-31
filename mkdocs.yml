@@ -1,11 +1,11 @@
 # Project information
-site_name: "MkDocs Material Boilerplate"
-site_description: "MkDocs Material Boilerplate (Starter Kit) - Deploy documentation to hosting platforms (Netlify, GitHub Pages, GitLab Pages, and AWS Amplify Console) with Docker, pipenv, and GitHub Actions."
+site_name: "Tom Waller's Polish Site"
+# site_description: "MkDocs Material Boilerplate (Starter Kit) - Deploy documentation to hosting platforms (Netlify, GitHub Pages, GitLab Pages, and AWS Amplify Console) with Docker, pipenv, and GitHub Actions."
 site_author: "peaceiris"
-site_url: "https://mkdocs.peaceiris.com/"
+# site_url: "https://mkdocs.peaceiris.com/"
 
 # Copyright
-copyright: "&copy; 2021 peaceiris"
+copyright: "&copy; 2022 Tom Waller"
 
 # Repository
 repo_name: "GitHub"
@@ -23,15 +23,15 @@ theme:
     previous: 80 # p
     search: 83 # s
   palette:
-    primary: "purple"
+    primary: "red"
     accent: "red"
   features:
     - tabs
   #font:
-  #text: 'Ubuntu'
+  # text: 'Ubuntu'
   #code: 'Ubuntu Mono'
   #icon:
-  #logo: 'images/logo.svg'
+  # logo: 'images/logo.svg'
   #favicon: 'assets/images/favicon.ico'
 
 # Extensions
@@ -39,6 +39,7 @@ markdown_extensions:
   - admonition
   - codehilite
   - footnotes
+  - attr_list
   - mdx_math:
       enable_dollar_delimiter: true
   - toc:
@@ -50,19 +51,28 @@ plugins:
       separator: '[\s\-\.]+'
       lang:
         - en
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
 
 # Customization
 extra_javascript:
   - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"
+  - tools/sentence_generator.js
 extra_css:
   - "assets/css/custom.css"
 extra:
   manifest: "manifest.json"
-  social:
-    - icon: "fontawesome/brands/github-alt"
-      link: "https://github.com/peaceiris"
-    - icon: "fontawesome/brands/twitter"
-      link: "https://twitter.com/piris314en"
+  # social:
+  #   - icon: "fontawesome/brands/github-alt"
+  #     link: "https://github.com/peaceiris"
+  #   - icon: "fontawesome/brands/twitter"
+  #     link: "https://twitter.com/piris314en"
 
 # Page tree
 nav:
@@ -74,8 +84,26 @@ nav:
         - 'Summary': 'cases/summary.md'
         - 'Case Question Examples': 'cases/question_examples.md'
         - 'Verbs By Cases': 'cases/verb_cases.md'
+    - 'Adjectives':
+        - 'Conjugation': 'adjectives/adjectives_conjugation.md'
     - 'Verbs':
         - 'Summary': 'verbs/verb_summary.md'
+    - 'Nouns':
+        - 'Declination - Singular': 'nouns/NounDeclination-Singular.md'
+        - 'Declination - Plural': 'nouns/NounDeclination-Pural.md'
+        - 'Personal Pronouns': 'nouns/NounPersonalPronouns.md'
+        - 'Possessive Pronouns': 'nouns/NounPossessivePronouns.md'
+        - 'Relative Pronouns': 'nouns/NounRelativePronouns.md'
+        - 'Demonstrative Pronouns': 'nouns/NounDemonstrativePronouns.md'
+        - 'Reflexive Pronouns': 'nouns/ReflexivePronouns.md'
+    - Prepositions:
+        - 'Prepositions': 'prepositions/prepositions.md'
+    - Numbers:
+        - 'Time': 'numbers/time.md'
+        - 'Dates': 'numbers/dates.md'
+    - Tools:
+        - 'Sentence Generator': 'tools/sentence_generator.md'
+        # - 'Sentence!': 'tools/test.txt'
     - About:
         - 'License': 'license.md'
         - 'Release Notes': 'release-notes.md'
