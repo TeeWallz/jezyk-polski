@@ -27,6 +27,9 @@ theme:
     accent: "red"
   features:
     - tabs
+    - toc.integrate
+    - navigation.tabs
+    - navigation.tabs.sticky
   #font:
   # text: 'Ubuntu'
   #code: 'Ubuntu Mono'
@@ -42,9 +45,9 @@ markdown_extensions:
   - attr_list
   - mdx_math:
       enable_dollar_delimiter: true
-  - toc:
-      permalink: true
-      separator: "_"
+  # - toc:
+  #     permalink: true
+  #     separator: "_"
 
 plugins:
   - search:
@@ -88,6 +91,7 @@ nav:
         - 'Conjugation': 'adjectives/adjectives_conjugation.md'
     - 'Verbs':
         - 'Summary': 'verbs/verb_summary.md'
+        - 'Się Verbs': 'verbs/sie_verbs.md'
     - 'Nouns':
         - 'Declination - Singular': 'nouns/NounDeclination-Singular.md'
         - 'Declination - Plural': 'nouns/NounDeclination-Pural.md'
