@@ -12,7 +12,7 @@ Myję się. – I am washing myself.
 
 
 * domagać się – to demand
-* modlić się – to pray
+* modlić się – to git pullpray
 * domyślać się – to guess, to presume
 * dziać się – to happen
 * wahać się – to hesitate
